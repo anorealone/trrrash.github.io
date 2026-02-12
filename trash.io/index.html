@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trash.io — ЧЕРНО-ФИОЛЕТОВАЯ ПИКСЕЛЬ-СЕТЬ</title>
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- ПИКСЕЛЬНЫЙ ШРИФТ -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <!-- НАШ CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="pixel-container">
+    <!-- ===== ШАПКА ===== -->
+    <div class="header">
+      <div class="logo">
+        <i class="fas fa-cube"></i>
+        <span>trash.io</span>
+      </div>
+      <div class="theme-toggle">
+        <button id="theme-dark" class="theme-btn active"><i class="fas fa-moon"></i> ЧЕРН</button>
+        <button id="theme-light" class="theme-btn"><i class="fas fa-sun"></i> БЕЛ</button>
+      </div>
+    </div>
+
+    <!-- ===== 3 ВКЛАДКИ ===== -->
+    <div class="tabs">
+      <button id="tab1-btn" class="active"><i class="fas fa-newspaper"></i> ГЛАВНАЯ</button>
+      <button id="tab2-btn"><i class="fas fa-user"></i> МОЙ ПРОФИЛЬ</button>
+      <button id="tab3-btn"><i class="fas fa-users"></i> МОИ ДРУЗЬЯ</button>
+    </div>
+
+    <!-- ===== ВКЛАДКА 1: ГЛАВНАЯ ===== -->
+    <div id="tab1" class="tab-content active">
+      <!-- ПОСТ 1 -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="avatar-pixel"><i class="fas fa-skull"></i></div>
+          <div class="nick">@Trump</div>
+        </div>
+        <div class="post-media">
+          <img src="https://media1.tenor.com/m/Ag1aWoYnA-oAAAAd/epstein-epstein-files.gif" alt="пиксельная гифка">
+          <span class="pixel-gif-badge"><i class="fas fa-file-image"></i> GIF</span>
+        </div>
+        <p style="margin-bottom: 10px;"> &lt;3 </p>
+        <div class="post-stats">
+          <button class="like-btn"><i class="fas fa-heart"></i> ЛАЙК <span class="likes-count">3.416</span></button>
+          <span class="views-display"><i class="fas fa-eye"></i> <span class="views-count">6761</span></span>
+        </div>
+      </div>
+
+      <!-- ПОСТ 2 -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="avatar-pixel"><i class="fas fa-robot"></i></div>
+          <div class="nick">@meganfox16</div>
+        </div>
+        <div class="post-media">
+          <img src="https://avatars.mds.yandex.net/i?id=1917f11d6d9388e683fdd60961ad4ebb_l-10521836-images-thumbs&n=13" alt="фиолетовый кот">
+          <span class="pixel-gif-badge"><i class="fas fa-camera"></i> ФОТО</span>
+        </div>
+        <p style="margin-bottom: 10px;">🐱котик</p>
+        <div class="post-stats">
+          <button class="like-btn"><i class="fas fa-heart"></i> ЛАЙК <span class="likes-count">147</span></button>
+          <span class="views-display"><i class="fas fa-eye"></i> <span class="views-count">892</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ВКЛАДКА 2: МОЙ ПРОФИЛЬ ===== -->
+    <div id="tab2" class="tab-content">
+      <div class="profile-card">
+        <div class="profile-row">
+          <div class="big-avatar">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+          <div>
+            <h2 id="profile-nick" style="font-size: 16px; margin-bottom: 15px; color: #e9d5ff;">@trash_io_user</h2>
+            <p style="font-size: 10px;">📸 ПОСТОВ: 2</p>
+            <p style="font-size: 10px; margin-top: 10px;">sad</p>
+          </div>
+          <button id="edit-profile-btn" class="profile-edit-btn">
+            <i class="fas fa-pencil-alt"></i> РЕДАКТ.
+          </button>
+        </div>
+        
+        <div style="border-top: 6px dashed #a855f7; margin: 25px 0;"></div>
+        
+        <h3 style="font-size: 14px; margin-bottom: 25px; color: #facc15; text-shadow: 3px 3px 0 #5b21b6;">
+          <i class="fas fa-images"></i> МОИ ПОСТЫ
+        </h3>
+        
+        <!-- МОЙ ПОСТ 1 -->
+        <div class="post-card user-post">
+          <div class="post-header">
+            <div class="avatar-pixel user-avatar"><i class="fas fa-user-astronaut"></i></div>
+            <div class="nick user-nick">@trash_io_user</div>
+          </div>
+          <div class="post-media">
+            <img src="https://media1.tenor.com/m/qko1R3pswKIAAAAC/storm-panda-warcraft3.gif" alt="моя гифка">
+            <span class="pixel-gif-badge">📹 GIF</span>
+          </div>
+          <p style="margin-bottom: 10px;"><span class="pixel-heart">&lt;3</span></p>
+          <div class="post-stats">
+            <button class="like-btn"><i class="fas fa-heart"></i> ЛАЙК <span class="likes-count">18</span></button>
+            <span class="views-display"><i class="fas fa-eye"></i> <span class="views-count">203</span></span>
+          </div>
+        </div>
+
+        <!-- МОЙ ПОСТ 2 -->
+        <div class="post-card user-post">
+          <div class="post-header">
+            <div class="avatar-pixel user-avatar"><i class="fas fa-user-astronaut"></i></div>
+            <div class="nick user-nick">@trash_io_user</div>
+          </div>
+          <div class="post-media">
+            <img src="https://images.steamusercontent.com/ugc/14381391313683312664/173113FBD9DDA250E578A876E31E0D803DFB4B5A/?imw=506&imh=283&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="мое фото">
+            <span class="pixel-gif-badge">📸 ФОТО</span>
+          </div>
+          <p style="margin-bottom: 10px;">sad</p>
+          <div class="post-stats">
+            <button class="like-btn"><i class="fas fa-heart"></i> ЛАЙК <span class="likes-count">32</span></button>
+            <span class="views-display"><i class="fas fa-eye"></i> <span class="views-count">415</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ВКЛАДКА 3: МОИ ДРУЗЬЯ ===== -->
+    <div id="tab3" class="tab-content">
+      <div class="friends-feed">
+        <!-- ПОСТ ДРУГА 1 -->
+        <div class="friend-post">
+          <div class="post-header">
+            <div class="avatar-pixel"><i class="fas fa-dragon"></i></div>
+            <div class="nick">@cyber_druid</div>
+          </div>
+          <div class="post-media">
+            <img src="https://media1.tenor.com/m/Zr7UbE9MHhEAAAAC/pixel-art-mountain.gif" alt="горы">
+            <span class="pixel-gif-badge">🌄 GIF</span>
+          </div>
+          <p style="margin-bottom: 10px;">⛰️ 8bit горы</p>
+          <div class="post-stats">
+            <button class="like-btn"><i class="fas fa-heart"></i> ЛАЙК <span class="likes-count">76</span></button>
+            <span class="views-display"><i class="fas fa-eye"></i> <span class="views-count">624</span></span>
+          </div>
+        </div>
+
+        <!-- ПОСТ ДРУГА 2 -->
+        <div class="friend-post">
+          <div class="post-header">
+            <div class="avatar-pixel"><i class="fas fa-cat"></i></div>
+            <div class="nick">@pixl_kitten</div>
+          </div>
+          <div class="post-media">
+            <img src="https://picsum.photos/id/40/400/300" alt="кот">
+            <span class="pixel-gif-badge">🐱 ФОТО</span>
+          </div>
+          <p style="margin-bottom: 10px;">😺 сонный пиксель-кот</p>
+          <div class="post-stats">
+            <button class="like-btn"><i class="fas fa-heart"></i> ЛАЙК <span class="likes-count">101</span></button>
+            <span class="views-display"><i class="fas fa-eye"></i> <span class="views-count">1.5K</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- НАШ JAVASCRIPT -->
+  <script src="js/script.js"></script>
+</body>
+</html>
